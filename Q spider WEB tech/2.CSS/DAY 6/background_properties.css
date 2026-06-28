@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    width: 800px;
+    height: 300px;
+    border: solid;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuBcZf6vmKWc2LDkAhKZbI2kPfnRkIk6iljg3vAE9ksyqMc4--pJAGM5I&s=10 );
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

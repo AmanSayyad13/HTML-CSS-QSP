@@ -1,0 +1,14 @@
+.ele {
+    color: rebeccapurple;
+    background: red;
+    /* display: inline-block; */
+    display: inline;
+    /* display: block;
+    display: none; */
+    */
+    /* display: flex; */
+    /* height: 500px;
+    width: 500; */
+    display: left;
+    background: aquamarine;
+}

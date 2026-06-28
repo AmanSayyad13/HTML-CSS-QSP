@@ -1,0 +1,35 @@
+/* div {
+    background-color: rgb(215, 144, 215);
+    width: 500px;
+    height: 500px;
+    border: double;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div2 {
+    background: black;
+    color: red;
+}
+
+.divs {
+    border-radius: 50%;
+    background: yellow;
+    color: rgb(0, 0, 0);
+} */
+
+
+/* Universal Selection
+* {
+    color: aquamarine;
+} */
+
+
+/* Grouping Selection .divs,
+p,
+div,
+#div2 {
+    color: rebeccapurple;
+} */

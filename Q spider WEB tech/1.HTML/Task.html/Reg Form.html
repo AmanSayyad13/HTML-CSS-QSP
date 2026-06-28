@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Example</title>
+</head>
+<body>
+
+    <!-- FORM TAG -->
+    <!-- action = where data goes after submit -->
+    <!-- method = GET or POST -->
+    <!-- autocomplete = browser remembers values -->
+    <form
+        action="/submit-data"
+        method="post"
+        autocomplete="on"
+        name="registrationForm">
+
+        <!-- FIELDSET groups related fields -->
+        <fieldset>
+
+            <!-- LEGEND gives title to fieldset -->
+            <legend>User Registration</legend>
+
+            <!-- LABEL connects text with input -->
+            <label for="fullname">Full Name:</label>
+
+            <!--
+                type="text"        => normal text input
+                id                => unique identifier
+                name              => key sent to server
+                placeholder       => hint text
+                required          => cannot be empty
+                maxlength         => max characters
+                minlength         => min characters
+                autofocus         => focused when page loads
+            -->
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter Full Name"
+                required
+                maxlength="30"
+                minlength="3"
+                autofocus>
+
+            <br><br>
+
+            <!-- EMAIL INPUT -->
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="abc@gmail.com"
+                required>
+
+            <br><br>
+
+            <!-- PASSWORD INPUT -->
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="8">
+
+            <br><br>
+
+            <!-- NUMBER INPUT -->
+            <label for="age">Age:</label>
+            <input
+                type="number"
+                id="age"
+                name="age"
+                min="18"
+                max="100"
+                step="1">
+
+            <br><br>
+
+            <!-- TEL INPUT -->
+            <label for="phone">Phone:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10}"
+                value="+91">
+
+            <br><br>
+
+            <!-- URL INPUT -->
+            <label for="website">Website:</label>
+            <input
+                type="url"
+                id="website"
+                name="website">
+
+            <br><br>
+
+            <!-- DATE INPUT -->
+            <label for="dob">DOB:</label>
+            <input
+                type="date"
+                id="dob"
+                name="dob">
+
+            <br><br>
+
+            <!-- TIME INPUT -->
+            <label for="time">Meeting Time:</label>
+            <input
+                type="time"
+                id="time"
+                name="time">
+
+            <br><br>
+
+            <!-- COLOR PICKER -->
+            <label for="color">Favorite Color:</label>
+            <input
+                type="color"
+                id="color"
+                name="color">
+
+            <br><br>
+
+            <!-- RANGE SLIDER -->
+            <label for="rating">Rating:</label>
+            <input
+                type="range"
+                id="rating"
+                name="rating"
+                min="1"
+                max="10">
+
+            <br><br>
+
+            <!-- RADIO BUTTONS -->
+            <!-- Same name => only one selectable -->
+            Gender:
+
+            <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="Male">
+
+            <label for="male">Male</label>
+
+            <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="Female">
+
+            <label for="female">Female</label>
+
+            <br><br>
+
+            <!-- CHECKBOX -->
+            <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                checked>
+
+            <label for="terms">
+                Accept Terms
+            </label>
+
+            <br><br>
+
+            <!-- FILE UPLOAD -->
+            <label for="resume">Resume:</label>
+
+            <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept=".pdf,.doc">
+
+            <br><br>
+
+            <!-- HIDDEN FIELD -->
+            <!-- User cannot see -->
+            <input
+                type="hidden"
+                name="userId"
+                value="12345">
+
+            <!-- TEXTAREA -->
+            <!-- rows = height -->
+            <!-- cols = width -->
+            <label for="about">About You:</label>
+
+            <textarea
+                id="about"
+                name="about"
+                rows="5"
+                cols="30"
+                placeholder="Write something...">
+            </textarea>
+
+            <br><br>
+
+            <!-- SELECT DROPDOWN -->
+            <label for="city">City:</label>
+
+            <select
+                id="city"
+                name="city"
+                required>
+
+                <!-- OPTION -->
+                <option value="">
+                    Select City
+                </option>
+
+                <option value="pune">
+                    Pune
+                </option>
+
+                <option value="mumbai" selected>
+                    Mumbai
+                </option>
+
+                <option value="delhi">
+                    Delhi
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <!-- OPTGROUP -->
+            <label for="course">Course:</label>
+
+            <select id="course">
+
+                <optgroup label="Frontend">
+
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+
+                </optgroup>
+
+                <optgroup label="Backend">
+
+                    <option>Node.js</option>
+                    <option>PHP</option>
+
+                </optgroup>
+
+            </select>
+
+            <br><br>
+
+            <!-- DATALIST -->
+            <!-- Suggestion list while typing -->
+            <input
+                list="languages"
+                placeholder="Choose Language">
+
+            <datalist id="languages">
+
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="React">
+
+            </datalist>
+
+            <br><br>
+
+            <!-- METER -->
+            <!-- Measurement -->
+            <label>Storage Used:</label>
+
+            <meter
+                min="0"
+                max="100"
+                value="70">
+            </meter>
+
+            <br><br>
+
+            <!-- PROGRESS -->
+            <!-- Progress bar -->
+            <label>Upload Progress:</label>
+
+            <progress
+                value="60"
+                max="100">
+            </progress>
+
+            <br><br>
+
+            <!-- OUTPUT -->
+            <output>
+                Result appears here
+            </output>
+
+            <br><br>
+
+            <!-- BUTTON TYPES -->
+
+            <!-- submit sends form -->
+            <button type="submit">
+                Submit
+            </button>
+
+            <!-- reset clears form -->
+            <button type="reset">
+                Reset
+            </button>
+
+            <!-- normal button -->
+            <button type="button">
+                Click Me
+            </button>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+ Tag Example With Comments
+HTML
+<table border="1">
+    
+    <!-- Table Caption (Title of table) -->
+    <caption>Student Marks</caption>
+
+    <!-- Table Header Section -->
+    <thead>
+        <tr>
+            <!-- Header Cell -->
+            <th>ID</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+    </thead>
+
+    <!-- Table Body Section -->
+    <tbody>
+        <tr>
+            <!-- Table Data Cell -->
+            <td>1</td>
+            <td>Rahul</td>
+            <td>85</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Priya</td>
+            <td>92</td>
+        </tr>
+    </tbody>
+
+    <!-- Table Footer Section -->
+    <tfoot>
+        <tr>
+            <!-- colspan merges columns -->
+            <td colspan="2">Total Students</td>
+            <td>2</td>
+        </tr>
+    </tfoot>
+
+</table>
+Table Tags
+HTML
+<table>    <!-- Creates table -->
+<thead>    <!-- Header section -->
+<tbody>    <!-- Main data section -->
+<tfoot>    <!-- Footer section -->
+<tr>       <!-- Table Row -->
+<th>       <!-- Header Cell -->
+<td>       <!-- Data Cell -->
+<caption>  <!-- Table Title -->
+<colgroup> <!-- Group columns -->
+<col>      <!-- Column properties -->
+Important Table Attributes
+border
+HTML
+<table border="1">
+Adds border to table.
+colspan
+HTML
+<td colspan="3">Merged 3 Columns</td>
+Merges multiple columns.
+rowspan
+HTML
+<td rowspan="2">HTML</td>
+Merges multiple rows.
+cellpadding (old HTML)
+HTML
+<table cellpadding="10">
+Space inside cells.
+cellspacing (old HTML)
+HTML
+<table cellspacing="5">
+Space between cells.
+width
+HTML
+<table width="500">
+Sets table width.
+height
+HTML
+<table height="200">
+Sets table height.
+Example Using rowspan and colspan
+HTML
+<table border="1">
+
+    <tr>
+        <th>Name</th>
+        <th colspan="2">Subjects</th>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Rahul</td>
+        <td>HTML</td>
+        <td>90</td>
+    </tr>
+
+    <tr>
+        <td>CSS</td>
+        <td>85</td>
+    </tr>
+
+</table>

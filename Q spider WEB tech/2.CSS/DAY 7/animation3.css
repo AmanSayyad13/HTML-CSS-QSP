@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    height: 300px;
+    width: 300px;
+    background: rgb(97, 4, 35);
+    animation-name: colorbox;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+@keyframes colorbox {
+    25%{
+        background: yellowgreen;
+        transform: rotate(60deg);
+
+    }
+    50%{
+        background: blanchedalmond;
+        transform: rotate(90deg);
+    }
+    75%{
+        background: blueviolet;
+        transform: rotate(180deg);
+    }
+    100%{
+        background: black;
+        transform: rotate(360deg);
+    }
+    
+}

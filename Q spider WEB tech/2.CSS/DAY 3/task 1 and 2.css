@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    border: 3px solid;
+    height: 350px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div {
+    background: palegreen;
+    height: 500px;
+    min-width: 50%;
+}
+
+span {
+    background: rebeccapurple;
+    min-width: 50%;
+}
+
+p {
+    width: 200px;
+    height: 100px;
+}
+
+section {
+    background: yellow;
+    min-width: 50%;
+}

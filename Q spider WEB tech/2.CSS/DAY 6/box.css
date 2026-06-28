@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main,
+section {
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: large;
+    border: 5px solid black;
+}
+
+main {
+    background: palegreen;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 20px;
+    background: palevioletred;
+    box-sizing: border-box;
+}

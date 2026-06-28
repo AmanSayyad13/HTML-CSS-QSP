@@ -1,0 +1,30 @@
+#container{
+    height: 500px;
+    width: 100%;
+    /* border:  2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow-x:scroll ; */
+    flex-wrap: wrap;
+    gap: 50px;
+    
+
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+}
+#box1{
+    background-image: url(https://assets.ajio.com/medias/sys_master/root/20240507/mdc0/663a557116fd2c6e6af0eee9/-1117Wx1400H-467293008-brown-MODEL.jpg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    
+
+
+}
