@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://jsdelivr.net"></script>
+    <!-- Fixed broken Font Awesome CDN to load icons perfectly -->
+  
+    <style>
+      /* Hides standard layout scrollbar tracks for a clean UI aesthetic */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      body {
+        background-color: black;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="h-screen flex flex-col justify-between p-2 bg-black text-white font-sans">
+    
+    <!-- NAVIGATION BAR -->
+    <nav class="h-[7vh] bg-black flex items-center justify-between px-4">
+      <section class="text-white text-3xl">
+        <i class="fa-brands fa-spotify"></i>
+      </section>
+      
+      <section class="flex items-center gap-[8px] flex-1 justify-center max-w-[500px]">
+        <article class="text-white bg-[#2a2a2a] text-xl flex justify-center items-center rounded-full w-[48px] h-[48px] cursor-pointer">
+          <i class="fa-solid fa-house"></i>
+        </article>
+        <article class="flex bg-[#2a2a2a] h-[48px] w-full max-w-[400px] rounded-full justify-between px-4 items-center">
+          <div class="text-[#b3b3b3]"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <div class="flex-1 px-2">
+            <input
+              type="text"
+              class="w-full bg-transparent text-white outline-none text-sm placeholder-[#757575]"
+              placeholder="What do you want to play?"
+            />
+          </div>
+          <div class="text-[#b3b3b3] border-l border-[#535353] pl-3"><i class="fa-regular fa-window-maximize"></i></div>
+        </article>
+      </section>
+
+      <section class="text-white flex items-center gap-[20px] text-sm font-bold">
+        <article class="flex items-center gap-[20px] border-r-[1px] border-r-white pr-[20px] text-[#b3b3b3]">
+          <div class="hover:text-white cursor-pointer">Premium</div>
+          <div class="hover:text-white cursor-pointer">Support</div>
+          <div class="hover:text-white cursor-pointer">Download</div>
+        </article>
+        <article class="flex items-center gap-[20px]">
+          <div class="text-[#b3b3b3] hover:text-white cursor-pointer"><i class="fa-regular fa-circle-down"></i> Install App</div>
+          <div class="text-[#b3b3b3] hover:text-white cursor-pointer">Sign up</div>
+          <div>
+            <button class="bg-white text-black rounded-full px-6 font-bold h-[4.5vh] hover:scale-105 transition">
+              Log in
+            </button>
+          </div>
+        </article>
+      </section>
+    </nav>
+
+    <!-- MAIN DASHBOARD CONTENT -->
+    <main class="flex flex-1 justify-between gap-2 h-[80vh] my-1">
+      
+      <!-- LEFT INTERACTIVE SIDEBAR -->
+      <aside class="w-[320px] rounded-lg bg-[#121212] p-5 flex flex-col justify-between overflow-y-auto no-scrollbar">
+        <div class="flex flex-col gap-5">
+          <!-- Library Header -->
+          <div class="flex items-center justify-between text-[#b3b3b3] font-bold">
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer transition">
+              <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 1 16.5 3v18a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h6a1 1 0 0 1 .5.134zM10.5 4v16h4V4h-4zm10.3 1.05a1 1 0 0 1 .318 1.378l-3.5 6a1 1 0 0 1-1.378.318l-5.196-3.03a1 1 0 0 1-.318-1.378l3.5-6a1 1 0 0 1 1.378-.318l5.196 3.03z"></path></svg>
+              <span class="text-base">Your Library</span>
+            </div>
+            <i class="fa-solid fa-plus hover:text-white cursor-pointer transition text-lg"></i>
+          </div>
+
+          <!-- Component Box 1: Playlist creation -->
+          <div class="bg-[#1f1f1f] p-4 rounded-xl flex flex-col gap-3">
+            <p class="font-bold text-sm text-white">Create your first playlist</p>
+            <p class="text-xs text-[#b3b3b3] font-medium">It's easy, we'll help you</p>
+            <button class="bg-white text-black font-bold text-xs rounded-full px-4 py-2 w-max hover:scale-105 transition">Create playlist</button>
+          </div>
+
+          <!-- Component Box 2: Podcast Discovery -->
+          <div class="bg-[#1f1f1f] p-4 rounded-xl flex flex-col gap-3">
+            <p class="font-bold text-sm text-white">Let's find some podcasts to follow</p>
+            <p class="text-xs text-[#b3b3b3] font-medium">We'll keep you updated on new episodes</p>
+            <button class="bg-white text-black font-bold text-xs rounded-full px-4 py-2 w-max hover:scale-105 transition">Browse podcasts</button>
+          </div>
+        </div>
+
+        <!-- Sticky Footer Links -->
+        <div class="mt-8 flex flex-col gap-6">
+          <div class="flex flex-wrap gap-x-4 gap-y-2 text-[11px] text-[#b3b3b3] font-medium">
+            <a href="#" class="hover:underline">Legal</a>
+            <a href="#" class="hover:underline">Safety & Privacy Center</a>
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <a href="#" class="hover:underline">Cookies</a>
+            <a href="#" class="hover:underline">About Ads</a>
+            <a href="#" class="hover:underline">Accessibility</a>
+            <a href="#" class="hover:underline">Cookies</a>
+          </div>
+          <button class="flex items-center gap-2 border border-[#727272] hover:border-white rounded-full px-3 py-1 text-xs font-bold text-white w-max transition">
+            <i class="fa-solid fa-globe text-sm"></i> English
+          </button>
+        </div>
+      </aside>
+
+      <!-- RIGHT MAIN CONTENT PANEL -->
+      <section class="flex-1 rounded-lg bg-[#121212] p-6 overflow-y-auto no-scrollbar flex flex-col gap-8">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-2xl font-bold tracking-tight hover:underline cursor-pointer text-white">Trending songs</h2>
+            <span class="text-xs font-bold text-[#b6b3b3] hover:underline cursor-pointer">Show all</span>
+          </div>
+
+          <!-- Grid Loop mapping image layout structures -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            
+            <!-- Song 1 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://gstatic.com" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Toh Phir Aao</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Pritam, Mustafa Zahid, Sayeed Quadri</p>
+            </div>
+
+            <!-- Song Card 2 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://gstatic.com" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Inaam (Ft. Badshah)</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Jasleen Royal, Badshah, Ansh Chahal</p>
+            </div>
+
+            <!-- Song Card 3 to 12 (Duplicate Cards matching screen setup) -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://gstatic.com" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+            </div>
+
+            <!-- Repeated Grid Items to match the screen layout -->
+            <script>
+              // Script helper block injection for clean markup replication
+              for (let i = 0; i < 9; i++) {
+                document.write(`
+                  <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+                    <div class="relative mb-3 shadow-lg">
+                      <img src="https://gstatic.com" class="w-full aspect-square object-cover rounded-md" />
+                    </div>
+                    <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+                    <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+                  </div>
+                `);
+              }
+            </script>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- COOKIE FOOTER CONSENT -->
+    <footer class="flex justify-between items-center bg-white text-black p-[12px] text-xs font-normal rounded-sm">
+      <p class="w-[85%] leading-normal">
+        We and our partners use cookies to personalize your experience, to show
+        you ads based on your interests, and for measurement and analytics
+        purposes. By using our website and services, you agree to our use of

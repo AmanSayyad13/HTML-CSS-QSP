@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- https://a10.gaanacdn.com/gn_img/artists/zLp36PvbrG/Lp36AR0KrG/size_l_1716815534.webp -->
+    <nav class="h-[7vh] bg-black flex items-center justify-between">
+      <section class="text-white text-4xl">
+        <i class="fa-brands fa-spotify"></i>
+      </section>
+      <section class="flex text-white relative gap-[20px] left-[200px]">
+        <article
+          class="text-white bg-[#2a2a2a] text-2xl flex justify-center items-center rounded-full w-[50px] h-[50px]"
+        >
+          <i class="fa-solid fa-house"></i>
+        </article>
+        <article
+          class="flex bg-[#2a2a2a] h-[6vh] w-[20vw] rounded-[50px] justify-between px-[20px] items-center"
+        >
+          <div><i class="fa-solid fa-magnifying-glass"></i></div>
+          <div>
+            <input
+              type="text"
+              class="w-[14vw] outline-none border-r-[1px] border-r-white"
+              placeholder="What do you want to play?"
+            />
+          </div>
+          <div><i class="fa-regular fa-window-maximize"></i></div>
+        </article>
+      </section>
+      <section class="text-white flex items-center gap-[20px]">
+        <article
+          class="flex items-center gap-[20px] border-r-[1px] border-r-white pr-[20px]"
+        >
+          <div>Premium</div>
+          <div>Support</div>
+          <div>Download</div>
+        </article>
+        <article class="flex items-center gap-[20px]">
+          <div><i class="fa-regular fa-circle-down"></i> Install App</div>
+          <div>Sign up</div>
+          <div>
+            <button
+              class="bg-white text-black rounded-full w-[130px] font-bold h-[6vh]"
+            >
+              Log in
+            </button>
+          </div>
+        </article>
+      </section>
+    </nav>
+
+    <main class="flex justify-around h-[86vh] bg-black items-center">
+      <aside class="w-[22%] h-[84vh] rounded-[20px] bg-[#0b0b0b]">
+        <!-- LEFT INTERACTIVE SIDEBAR -->
+      <aside class="w-[320px] rounded-lg bg-[#121212] p-5 flex flex-col justify-between overflow-y-auto no-scrollbar">
+        <div class="flex flex-col gap-5">
+          <!-- Library Header -->
+          <div class="flex items-center justify-between text-[#b3b3b3] font-bold">
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer transition">
+              <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 1 16.5 3v18a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h6a1 1 0 0 1 .5.134zM10.5 4v16h4V4h-4zm10.3 1.05a1 1 0 0 1 .318 1.378l-3.5 6a1 1 0 0 1-1.378.318l-5.196-3.03a1 1 0 0 1-.318-1.378l3.5-6a1 1 0 0 1 1.378-.318l5.196 3.03z"></path></svg>
+              <span class="text-base">Your Library</span>
+            </div>
+            <i class="fa-solid fa-plus hover:text-white cursor-pointer transition text-lg"></i>
+          </div>
+
+          <!-- Component Box 1: Playlist creation -->
+          <div class="bg-[#1f1f1f] p-4 rounded-xl flex flex-col gap-3">
+            <p class="font-bold text-sm text-white">Create your first playlist</p>
+            <p class="text-xs text-[#b3b3b3] font-medium">It's easy, we'll help you</p>
+            <button class="bg-white text-black font-bold text-xs rounded-full px-4 py-2 w-max hover:scale-105 transition">Create playlist</button>
+          </div>
+
+          <!-- Component Box 2: Podcast Discovery -->
+          <div class="bg-[#1f1f1f] p-4 rounded-xl flex flex-col gap-3">
+            <p class="font-bold text-sm text-white">Let's find some podcasts to follow</p>
+            <p class="text-xs text-[#b3b3b3] font-medium">We'll keep you updated on new episodes</p>
+            <button class="bg-white text-black font-bold text-xs rounded-full px-4 py-2 w-max hover:scale-105 transition">Browse podcasts</button>
+          </div>
+
+
+        <!-- Sticky Footer Links -->
+        <div class="mt-8 flex flex-col gap-6">
+          <div class="flex flex-wrap gap-x-4 gap-y-2 text-[11px] text-[#b3b3b3] font-medium">
+            <a href="#" class="hover:underline">Legal</a>
+            <a href="#" class="hover:underline">Safety & Privacy Center</a>
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <a href="#" class="hover:underline">Cookies</a>
+            <a href="#" class="hover:underline">About Ads</a>
+            <a href="#" class="hover:underline">Accessibility</a>
+            <a href="#" class="hover:underline">Cookies</a>
+          </div>
+          <button class="flex items-center gap-2 border border-[#727272] hover:border-white rounded-full px-3 py-1 text-xs font-bold text-white w-max transition">
+            <i class="fa-solid fa-globe text-sm"></i> English
+          </button>
+        </div>
+      </aside>
+      <!-- <section class="w-[77%] h-[84vh] rounded-[20px] bg-[#070606]"> -->
+        
+         
+         
+        </div>
+      </aside>
+
+
+      <section class="flex-1 rounded-lg bg-[#121212] p-6 overflow-y-auto no-scrollbar flex flex-col gap-8">
+        
+
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-2xl font-bold tracking-tight hover:underline cursor-pointer  text-[#b6b3b3]" >Trending songs</h2>
+            <span class="text-xs font-bold text-[#b6b3b3] hover:underline cursor-pointer">Show all</span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            
+<!-- song1 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-nsZdeUvKJqKhx5vno8Lz5UcOpKZmKOBYnSzmMHC97g&s=10" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Toh Phir Aao</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Pritam, Mustafa Zahid, Sayeed Quadri</p>
+            </div>
+
+            <!-- Song Card 2 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQMIVLK1RdcODVmEjZvS9byv3CLffePNEn6jNU7mcdzQ&s=10" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Inaam (Ft. Badshah)</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Jasleen Royal, Badshah, Ansh Chahal</p>
+            </div>
+
+            <!-- Song Card 3 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauRsWcR8MT-aew6KgXjtAEYGrn5TLGyf5DppfYIZWRQ&s" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+            </div>
+             <!-- Song Card 3 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauRsWcR8MT-aew6KgXjtAEYGrn5TLGyf5DppfYIZWRQ&s" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+            </div>
+             <!-- Song Card 3 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauRsWcR8MT-aew6KgXjtAEYGrn5TLGyf5DppfYIZWRQ&s" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+            </div>
+             <!-- Song Card 3 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauRsWcR8MT-aew6KgXjtAEYGrn5TLGyf5DppfYIZWRQ&s" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+            </div>
+             <!-- Song Card 3 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauRsWcR8MT-aew6KgXjtAEYGrn5TLGyf5DppfYIZWRQ&s" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+            </div> <!-- Song Card 3 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauRsWcR8MT-aew6KgXjtAEYGrn5TLGyf5DppfYIZWRQ&s" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+            </div> <!-- Song Card 3 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauRsWcR8MT-aew6KgXjtAEYGrn5TLGyf5DppfYIZWRQ&s" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+            </div> <!-- Song Card 3 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauRsWcR8MT-aew6KgXjtAEYGrn5TLGyf5DppfYIZWRQ&s" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+            </div> <!-- Song Card 3 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauRsWcR8MT-aew6KgXjtAEYGrn5TLGyf5DppfYIZWRQ&s" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+            </div> <!-- Song Card 3 -->
+            <div class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg transition duration-300 cursor-pointer group">
+              <div class="relative mb-3 shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauRsWcR8MT-aew6KgXjtAEYGrn5TLGyf5DppfYIZWRQ&s" class="w-full aspect-square object-cover rounded-md" />
+              </div>
+              <p class="font-bold text-sm truncate text-white mb-1">Saree (From "Dhamaal 4")</p>
+              <p class="text-xs text-[#b3b3b3] line-clamp-2 leading-relaxed">Tanishk Bagchi, Sanju Rathod, G-5FXRK</p>
+            </div>
+      </section>
+    </main>
+    <footer class="flex justify-between p-[10px]">
+      <p class="w-[55%]">
+        We and our partners use cookies to personalize your experience, to show
+        you ads based on your interests, and for measurement and analytics
+        purposes. By using our website and services, you agree to our use of
+        cookies as described in our Cookie Policy.
+      </p>
+      <p>
+        <i class="fa-solid fa-xmark"></i>
+      </p>
+    </footer>
+  </body>
+</html>
